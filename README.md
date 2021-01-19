@@ -9,7 +9,7 @@
   * links functional
   * semantic html
   * personalized information
-  * bootstrap grid system
+  * bootstrap grid
   * fixed footer
 
 * portfolio.html:
