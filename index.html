@@ -14,6 +14,13 @@
       .col-7{
         background-color: lightgray;
       }
+
+      @media screen and (max-width: 580px){
+        .col-7 {
+          width: 94%;
+          margin-right: 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -42,14 +49,24 @@
 
     <container class="container">
       <div class="row">
-        <div class="col-7" style="border: 3px solid black; margin-left: 20px;">
+        <article class="col-7" style="border: 3px solid black; margin-left: 20px;">
           <h1>About Me</h1>
           <br>
           <img src="https://echeck.org/wp-content/uploads/2017/02/Dog-in-a-Suit.jpg" alt="dog-with-suit" style="float: left; width: 300px; margin: 10px 10px">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</div>
+          <p>
+            My name is Siyuan Huo, or you can call me George. After earning my Batchelor of Science degree in Computer Science in 2020, I entered the IT world to explore my passion for developing and researching.
+          </p>
+          <p>
+            As a graduate from University of Toronto with a B.Sc. degree in Computer Science and Mathematics, my academic experience in software development life cycle (SDLC), Algorithm Design have given me a solid base upon which I plan to build my career. 
+          </p>
+        </article>
       </div>
     </container>
-    <footer>
-
+    <footer class="footer fixed-bottom bg-dark" style="align-items: center;">
+      <br>
+      <ul class="m">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LikedIn</a></li>
+      </ul>
     </footer>
 </html>
