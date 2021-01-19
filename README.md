@@ -16,7 +16,7 @@
   * navbar setup
   * links functional
   * semantic html
-  * fixed footer
+  * sticky footer
   * grid gallary
 
 * contact.html:
