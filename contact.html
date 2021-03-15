@@ -56,30 +56,58 @@
       <div class="col-7">
         <h1>Contact</h1>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
+          <label for="nameInput class="form-label">Name</label>
+          <input type="email" class="form-control" id="nameInput">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
+          <label for="emailInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailInput">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="messageInput" class="form-label">Message</label>
+          <textarea class="form-control" id="messageInput" rows="3"></textarea>
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-dark mb-3">Submit</button>
+          <button type="submit" class="btn btn-dark mb-3" onclick="submit(event)">Submit</button>
         </div>
       </div>
     </div>
   </container>
 
-  <footer class="footer mt-auto py-3 bg-dark" style="align-items: center;">
-    <br>
-    <ul class="m">
-      <li><a href="https://github.com/siyuanhuo">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/siyuanhuo/">LikedIn</a></li>
-    </ul>
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <a href="https://github.com/siyuanhuo">GitHub</a>
+      <a href="https://www.linkedin.com/in/siyuanhuo/">LikedIn</a>
+    </div>
   </footer>
-</body>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const name = document.querySelector('#nameInput')
+      const email = document.querySelector('#emailInput')
+      const message = document.querySelector('#messageInput')
+
+      async function submit(event){
+        event.preventDefault()
+        
+        await Email.send({
+          Host: "smtp.gmail.com",
+          Username: "georgehuo0211@gmail.com",
+          Password: "Vh3Ds@df0K",
+          To: "siyuan.huo@yahoo.com",
+          From: "georgehuo0211@gmail.com",
+          Subject: `Message from ${name.value}`,
+          Body: `
+                  Message: ${message.value}\n
+                  Please Reply Email: ${email.value}
+                `
+        })
+
+        name.value = ''
+        email.value = ''
+        message.value = ''
+        alert("Your message has beed sent.")
+      }
+
+    </script>
 </html>
