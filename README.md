@@ -1,27 +1,13 @@
-### My Portfolio (Homework 2)
+### Portfolio
+
+# Discription
+
+This is my portfolio, new version will be updated continuously.
+
+# Table of Contents
+
+* [Deploy](#deploy)
+
+# Deploy
 
 [WebPage](https://siyuanhuo.github.io/portfolio/)
-
-# Check list:
-
-* index.html:
-  * navbar setup
-  * links functional
-  * semantic html
-  * personalized information
-  * bootstrap grid
-  * fixed footer
-
-* portfolio.html:
-  * navbar setup
-  * links functional
-  * semantic html
-  * sticky footer
-  * grid gallary
-
-* contact.html:
-  * navbar setup
-  * links functional
-  * semantic html
-  * fixed footer
-  * bootstrap form
