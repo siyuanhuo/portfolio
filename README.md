@@ -1,13 +1,13 @@
-### Portfolio
+# Portfolio
 
-# Discription
+## Discription
 
 This is my portfolio, new version will be updated continuously.
 
-# Table of Contents
+## Table of Contents
 
 * [Deploy](#deploy)
 
-# Deploy
+## Deploy
 
 [WebPage](https://siyuanhuo.github.io/portfolio/)
